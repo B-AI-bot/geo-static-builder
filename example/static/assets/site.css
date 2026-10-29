@@ -1,0 +1,12 @@
+:root { --ink: #1f1b16; --paper: #fbf8f2; --accent: #8a5a2b; --line: #e6dfd3; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+.top, main, .foot { max-width: 46rem; margin: 0 auto; padding: 1rem; }
+.top { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
+.top nav { display: flex; gap: 1rem; }
+.brand { font-weight: 700; color: var(--ink); text-decoration: none; }
+a { color: var(--accent); }
+a[aria-current="page"] { font-weight: 600; }
+details.faq { border-top: 1px solid var(--line); padding: 0.6rem 0; }
+details.faq summary { cursor: pointer; font-weight: 600; }
+.foot { color: #6b6257; font-size: 0.9rem; border-top: 1px solid var(--line); }

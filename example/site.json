@@ -1,0 +1,56 @@
+{
+  "name": "Juniper & Rye",
+  "base_url": "https://www.example.com",
+  "description": "Juniper & Rye is a fictional neighbourhood bakery used to demonstrate geo-static-builder: naturally leavened bread, bread classes and a free sourdough guide.",
+  "default_lang": "en",
+  "organization": {
+    "name": "Juniper & Rye (fictional)",
+    "email": "hello@example.com",
+    "logo": "/favicon.svg"
+  },
+  "author": {
+    "name": "Sam Baker",
+    "url": "https://www.example.com/about/"
+  },
+  "og_image": "/assets/og.png",
+  "stylesheets": ["assets/site.css"],
+  "scripts": [],
+  "languages": {
+    "en": {
+      "locale": "en-US",
+      "label": "EN",
+      "home": "/",
+      "breadcrumb_home": "Home",
+      "llms_heading": "Pages (English)",
+      "nav": [["Sourdough guide", "/guides/sourdough-starter/"], ["About", "/about/"]],
+      "footer": "Juniper & Rye is a fictional bakery. Every name and number on this site is an example."
+    },
+    "fr": {
+      "locale": "fr-FR",
+      "label": "FR",
+      "home": "/fr/",
+      "breadcrumb_home": "Accueil",
+      "llms_heading": "Pages (français)",
+      "nav": [["Guide du levain", "/fr/guides/levain-naturel/"], ["À propos", "/fr/a-propos/"]],
+      "footer": "Juniper & Rye est une boulangerie fictive. Les noms et les chiffres de ce site sont des exemples."
+    }
+  },
+  "llms": {
+    "summary": "Juniper & Rye is a fictional neighbourhood bakery. This site is the demo for geo-static-builder.",
+    "facts": [
+      "Facts: every loaf is naturally leavened and fermented for 18 to 24 hours. Bread classes run on Saturday mornings for up to 8 people.",
+      "Contact: hello@example.com"
+    ]
+  },
+  "guards": {
+    "no_em_dash": true,
+    "banned_phrases": ["lorem ipsum", "coming soon", "click here"],
+    "title_length": [20, 70],
+    "description_length": [110, 165]
+  },
+  "not_found": {
+    "title": "Page not found | Juniper & Rye",
+    "description": "This page does not exist.",
+    "body": "<h1>Page not found</h1><p><a href=\"/\">Back to the home page</a> or <a href=\"/fr/\">version française</a>.</p>"
+  }
+}
